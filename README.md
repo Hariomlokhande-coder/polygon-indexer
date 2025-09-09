@@ -268,7 +268,7 @@ Check what’s stored in SQLite manually:
    .Add historical backfill mode.
 
 # Screenshots
-
+---- Note: If the image preview is not clickable in GitHub, you can also open the file directly from the docs/screenshots folder.
 ## Database Schema
 ![Schema](docs/screenshots/schema.png)
 
