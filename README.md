@@ -1,4 +1,4 @@
-#-------------Real-Time Polygon Blockchain Data Indexer
+# Real-Time Polygon Blockchain Data Indexer
 
 This project implements a **real-time blockchain data indexer** on the **Polygon network** using Rust.  
 It listens for **POL token transfers** involving **Binance exchange addresses**, stores all raw transfers in SQLite, and provides an aggregated view of **cumulative net-flows** through a simple REST API.
@@ -7,7 +7,7 @@ Designed with **scalability, reliability, and clean engineering practices** in m
 
 ---
 
-#------------✨ Features
+# Features
 
 - **Real-time indexing**  
   Continuously fetches the latest Polygon blocks and processes confirmed token transfers.
@@ -43,7 +43,7 @@ Designed with **scalability, reliability, and clean engineering practices** in m
 
 ---
 
------------------## 🛠️ Tech Stack
+# Tech Stack
 
 ##----------- Backend
 - **Rust**
@@ -59,7 +59,7 @@ Designed with **scalability, reliability, and clean engineering practices** in m
 - **Blockchain**
   - Polygon RPC (via Chainstack endpoint)
 
-##----------- Frontend
+## Frontend
 - **Next.js 14**
 - **React Hooks**
 - **TailwindCSS + shadcn/ui**
@@ -67,7 +67,7 @@ Designed with **scalability, reliability, and clean engineering practices** in m
 
 ---
 
-##----------------Project Structure
+## Project Structure
 
 ```bash
 src/
@@ -87,7 +87,7 @@ frontend/dashboard/
  ├── components/ui   # Reusable UI components (Cards, Tables, Alerts)
  └── ...
 
-##---------- Database Schema
+## Database Schema
 
 Transfers Table:
 
@@ -120,7 +120,7 @@ CREATE TABLE IF NOT EXISTS netflows (
     updated_at     TEXT NOT NULL DEFAULT (datetime('now'))
 );
 
-##---------------🚀 Running the Project
+## Running the Project
 
 1. Clone the Repository:
   
@@ -249,7 +249,7 @@ Check what’s stored in SQLite manually:
 	Use Chainstack / Alchemy / Infura RPC for better reliability.
 	Always restart backend after modifying .env.
 
-##--------------- Edge Cases & Safeguards
+## Edge Cases & Safeguards
 
    .RPC Failures → Retries with exponential backoff (max 120s).
    .Rate Limits → Inserted sleep(200ms) between requests.
@@ -258,7 +258,7 @@ Check what’s stored in SQLite manually:
    .Graceful Shutdown → Listens for ctrl+c signal.
    .Future-Proof → Separate modules (reorg.rs, cache.rs) left as extension points.
 
-##---------------Future Improvements
+## Future Improvements
 
    .Add full chain reorg handling (rollback affected blocks).
    .Extend multi-token monitoring (already partially supported).
@@ -267,7 +267,7 @@ Check what’s stored in SQLite manually:
    .Improve frontend with charts (inflows vs outflows over time).
    .Add historical backfill mode.
 
-##-------------- Screenshots
+# Screenshots
 
 ## Database Schema
 ![Schema](docs/screenshots/schema.png)
@@ -287,7 +287,7 @@ Check what’s stored in SQLite manually:
 ## System Workflow
 ![System Workflow](docs/screenshots/polygon_netflow_workflow.png)
 
-##----------------Author
+# Author
 
     Name of author: Hariom Lokhande
     Contact: hariomlokhande3456@gmail.com | http://linkedin.com/in/hariomlokhande
