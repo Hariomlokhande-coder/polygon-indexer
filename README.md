@@ -45,7 +45,7 @@ Designed with **scalability, reliability, and clean engineering practices** in m
 
 # Tech Stack
 
-##----------- Backend
+## Backend
 - **Rust**
   - Tokio (async runtime)
   - Tracing (structured logs)
@@ -125,7 +125,7 @@ CREATE TABLE IF NOT EXISTS netflows (
 1. Clone the Repository:
   
    git clone https://github.com/Hariomlokhande-coder/polygon-indexer.git
-   cd polygon-indexer   # replace with your cloned folder name if different
+   cd polygon-indexer
 
 2. Backend Setup(Rust):
 https://github.com/Hariomlokhande-coder/polygon-indexer.git
