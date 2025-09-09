@@ -124,8 +124,8 @@ CREATE TABLE IF NOT EXISTS netflows (
 
 1. Clone the Repository:
   
-    git clone https://github.com/Hariomlokhande-coder/polygon-indexer.git
-    cd my_project
+   git clone https://github.com/Hariomlokhande-coder/polygon-indexer.git
+   cd polygon-indexer   # replace with your cloned folder name if different
 
 2. Backend Setup(Rust):
 https://github.com/Hariomlokhande-coder/polygon-indexer.git
