@@ -16,7 +16,7 @@ frontend/dashboard/.next
 frontend/dashboard/out
 
 # Database
-
+*netflow.db
 *.db-shm
 *.db-wal
 

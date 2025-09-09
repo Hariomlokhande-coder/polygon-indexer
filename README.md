@@ -124,11 +124,11 @@ CREATE TABLE IF NOT EXISTS netflows (
 
 1. Clone the Repository:
   
-    git clone https://github.com/<your-repo>.git
+    git clone https://github.com/Hariomlokhande-coder/polygon-indexer.git
     cd my_project
 
 2. Backend Setup(Rust):
-
+https://github.com/Hariomlokhande-coder/polygon-indexer.git
 a) Install Rust
 If not already installed:
 
@@ -279,14 +279,13 @@ Check what’s stored in SQLite manually:
 ![Transfers](docs/screenshots/transfers.png)
 
 ## Netflows
-![Netflows](D:\RustProjects\my_project\docs\screenshots\netflows.png)
+![Netflows](docs/screenshots/netflows.png)
 
 ## Frontend Dashboard
 ![Dashboard](docs/screenshots/dashboard.png)
 
 ## System Workflow
 ![System Workflow](docs/screenshots/polygon_netflow_workflow.png)
-
 
 ##----------------Author
 
